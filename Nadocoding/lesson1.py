@@ -59,12 +59,36 @@ password = ""
 password = password + site1[:3] + str(len(site1)) + str(site1.count("e")) + "!"
 print(password)
 '''
-
+'''
 # Quiz 4
 # 20명 중 추첨을 통해 1명은 치킨, 3명은 커피 쿠폰 수령하게하는 프로그램 작성(중복 불가)
 
 from random import *
 
-applicants = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
-a = randint(1, 20)
-if a in applicants:
+applicants = list(range(1, 21))
+shuffle(applicants)
+chicken = randint(1, 20)
+applicants.remove(chicken)
+
+coffee = []
+i = 0
+while len(coffee) < 3:
+    b = randint(1, 20)
+    if b in applicants:
+        applicants.remove(b)
+        coffee.append(b)
+        coffee.sort()
+    i += 1
+
+print("""** 당첨자 발표 **
+치킨 당첨자 : {}
+커피 당첨자 : {}
+** 축하합니다 **""".format(chicken, coffee))
+'''
+
+# Quiz 5
+
+students = ["Iron man", "Thor", "I am Groot"]
+students = [len(i) for i in students]
+
+print(students)
