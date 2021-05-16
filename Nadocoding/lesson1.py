@@ -85,10 +85,42 @@ print("""** 당첨자 발표 **
 커피 당첨자 : {}
 ** 축하합니다 **""".format(chicken, coffee))
 '''
-
+'''
 # Quiz 5
+# 당신은 Cocoa 서비스를 이용하는 택시기사입니다.
+# 50명의 승객과 매칭 기회가 있을 때, 총 탑승 승객 수를 구하는 프로그램을 작성하시오.
+# 조건1 : 승객별 운행 소요 시간은 5분~50분 사이의 난수
+# 조건2 : 당신은 소요 시간 5분~15분 사이의 승객만 매칭
 
-students = ["Iron man", "Thor", "I am Groot"]
-students = [len(i) for i in students]
+from random import *
 
-print(students)
+count = 0
+for i in range(50):
+    client = randrange(5, 51)
+    if 5 <= client <= 15:
+        count = count + 1
+        print("[O] {}번째 손님 (소요시간 : {}분)".format(i+1, client))
+    else:
+        print("[ ] {}번째 손님 (소요시간 : {}분)".format(i+1, client))
+
+print("총 탑승 승객 : {} 분".format(count))
+'''
+
+# Quiz 6
+# 표준 체중을 구하는 프로그램 작성
+# <성별에 따른 공식>
+# 남성 : 키(m) x 키(m) x 22
+# 여성 : 키(m) x 키(m) x 21
+
+def std_weight(height, gender):
+    if gender == "남":
+        return round(height/100*height/100*22,2)
+    elif gender == "여":
+        return round(height/100*height/100*21,2)
+    else:
+        quit()
+
+height = float(input("키를 입력하시오: "))
+gender = input("성별을 입력하시오: (예시: 남, 여)")
+
+print("키 {0}cm {1}의 표준 체중은 {2}kg 입니다.".format(height, gender, std_weight(height, gender)))
