@@ -105,7 +105,7 @@ for i in range(50):
 
 print("총 탑승 승객 : {} 분".format(count))
 '''
-
+'''
 # Quiz 6
 # 표준 체중을 구하는 프로그램 작성
 # <성별에 따른 공식>
@@ -124,3 +124,11 @@ height = float(input("키를 입력하시오: "))
 gender = input("성별을 입력하시오: (예시: 남, 여)")
 
 print("키 {0}cm {1}의 표준 체중은 {2}kg 입니다.".format(height, gender, std_weight(height, gender)))
+'''
+
+# Quiz 7
+# import sys
+# print("python", "Java", file = sys.stderr)
+# print("python", "Java", file = sys.stdout)
+
+scores = {}
