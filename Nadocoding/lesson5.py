@@ -27,5 +27,18 @@
 # price_morning(4)
 
 # (5)
-from theater_module import price_soldier as price
-price(5)
+# from theater_module import price_soldier as price
+# price(5)
+
+
+# dir : 어떤 객체를 넘겨줬을 때 그 객체가 어떤 변수와 함수를 가지고 있는지 표시
+# print(dir())
+# import random
+# print(dir())
+# print(dir(random)) # 랜덤 모듈 내 어떤 함수를 쓸 수 있는지 표시
+
+lst = [1,2,3]
+print(dir(lst)) # 리스트에서 쓸 수 있는 함수 표시
+
+name = "Jim"
+print(dir(name))
