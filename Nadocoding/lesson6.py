@@ -19,8 +19,14 @@
 # trip_to.detail()
 # trip_to2.detail()
 
-import inspect
-import random
-from travel import *
-print(inspect.getfile(random))
-print(inspect.getfile(thailand))
+# import inspect
+# import random
+# from travel import *
+# print(inspect.getfile(random))
+# print(inspect.getfile(thailand))
+
+# Quiz11) 프로젝트 내에 나만의 시그니처를 남기는 모듈을 만드시오
+# 조건 : 모듈 파일명은 byme.py로 작성
+
+import byme
+byme.sign()
