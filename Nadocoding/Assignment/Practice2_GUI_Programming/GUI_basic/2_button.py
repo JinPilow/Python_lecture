@@ -18,9 +18,9 @@ btn4.pack()
 btn5 = Button(root, fg = "red", bg = "yellow", text = "버튼5")
 btn5.pack()
 
-# photo = PhotoImage(file = "GUI_basic/img.png")
-# btn6 = Button(root, image = photo)
-# btn6.pack()
+photo = PhotoImage(file = "C:\\Users\\xibyu\\PycharmProjects\\Python lecture\\Nadocoding\\Assignment\\Practice2_GUI_Programming\\GUI_basic\\img.png")
+btn6 = Button(root, image = photo)
+btn6.pack()
 
 def btncmd():
     print("버튼이 클릭되었어요.")
