@@ -30,7 +30,7 @@ def browse_dest_path():
         return
     # print(folder_selected)
     txt_dest_path.delete(0, END)
-    txt_dest_path.insert(folder_selected)
+    txt_dest_path.insert(0, folder_selected)
 
 # 시작
 def start():
