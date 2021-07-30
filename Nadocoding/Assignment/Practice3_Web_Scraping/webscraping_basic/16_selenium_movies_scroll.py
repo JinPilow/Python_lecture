@@ -71,6 +71,6 @@ for movie in movies:
     print(f"할인 전 금액 : {original_price}")
     print(f"할인 후 금액 : {price}")
     print("링크 : ", "https://play.google.com" + link)
-    print("-" * 120)
+    print("-" * 130)
 
 browser.quit()
